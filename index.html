@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RANGRATNA SAREES | Online Saree Store</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#fff8fc;
+    color:#333;
+}
+
+header{
+    background:#8b145c;
+    color:white;
+    padding:15px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.tagline{
+    font-size:12px;
+    margin-top:3px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:18px;
+    font-weight:bold;
+}
+
+.hero{
+    min-height:400px;
+    background:linear-gradient(120deg,#8b145c,#d63b91);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#8b145c;
+    padding:13px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:45px 20px;
+}
+
+.section-title{
+    text-align:center;
+    color:#8b145c;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.category{
+    background:white;
+    padding:25px 10px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 3px 12px #0001;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.product{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 3px 15px #0001;
+}
+
+.product-image{
+    height:250px;
+    background:#f1e5ec;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:50px;
+}
+
+.product-info{
+    padding:15px;
+}
+
+.product h3{
+    margin-bottom:8px;
+}
+
+.price{
+    color:#8b145c;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.old-price{
+    color:#999;
+    text-decoration:line-through;
+    font-size:14px;
+    margin-left:5px;
+}
+
+.rating{
+    color:#e59a00;
+    margin:8px 0;
+}
+
+.buy{
+    display:block;
+    background:#8b145c;
+    color:white;
+    text-align:center;
+    padding:11px;
+    border-radius:8px;
+    text-decoration:none;
+    margin-top:10px;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.feature-icon{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.reviews{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.review{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 3px 12px #0001;
+}
+
+footer{
+    background:#24121f;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:27px;
+    text-decoration:none;
+    box-shadow:0 3px 15px #0004;
+}
+
+@media(max-width:700px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav a{
+        margin:0 6px;
+        font-size:13px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div>
+<div class="logo">🌈 RANGRATNA SAREES</div>
+<div class="tagline">रंग, परंपरा आणि सौंदर्य</div>
+</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="#products">Products</a>
+<a href="#categories">Categories</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+<div>
+
+<h1>प्रत्येक सणासाठी<br>प्रत्येक क्षणासाठी</h1>
+
+<p>सुंदर साड्यांचे खास कलेक्शन</p>
+
+<a href="#products" class="btn">
+🛍️ Shop Now
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="section">
+
+<div class="features">
+
+<div class="feature">
+<div class="feature-icon">🚚</div>
+<h3>घरपोच Delivery</h3>
+<p>तुमच्या घरापर्यंत सुरक्षित डिलिव्हरी</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">💵</div>
+<h3>Cash on Delivery</h3>
+<p>COD उपलब्ध</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">📱</div>
+<h3>WhatsApp Order</h3>
+<p>WhatsApp वरून सहज ऑर्डर करा</p>
+</div>
+
+<div class="feature">
+<div class="feature-icon">❤️</div>
+<h3>Quality Products</h3>
+<p>सुंदर आणि निवडक साड्या</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="section" id="categories">
+
+<h2 class="section-title">
+🛍️ Categories
+</h2>
+
+<div class="categories">
+
+<div class="category">👗 Designer Sarees</div>
+
+<div class="category">🌸 Printed Sarees</div>
+
+<div class="category">🌿 Cotton Sarees</div>
+
+<div class="category">✨ Party Wear</div>
+
+<div class="category">🌺 Traditional</div>
+
+<div class="category">💎 Silk Sarees</div>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="section" id="products">
+
+<h2 class="section-title">
+✨ Featured Sarees
+</h2>
+
+<div class="products">
+
+
+<!-- PRODUCT 1 -->
+
+<div class="product">
+
+<div class="product-image">
+📸
+</div>
+
+<div class="product-info">
+
+<h3>Designer Silk Saree</h3>
+
+<div class="rating">
+★★★★★ 4.8
+</div>
+
+<div class="price">
+₹699
+<span class="old-price">₹999</span>
+</div>
+
+<p>Product ID: RS001</p>
+
+<a class="buy"
+href="https://wa.me/919999999999?text=Hello%20Rangratna%20Sarees%2C%20mala%20Designer%20Silk%20Saree%20RS001%20order%20karaychi%20aahe.">
+📱 Order on WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 2 -->
+
+<div class="product">
+
+<div class="product-image">
+📸
+</div>
+
+<div class="product-info">
+
+<h3>Traditional Printed Saree</h3>
+
+<div class="rating">
+★★★★★ 4.7
+</div>
+
+<div class="price">
+₹550
+<span class="old-price">₹799</span>
+</div>
+
+<p>Product ID: RS002</p>
+
+<a class="buy"
+href="https://wa.me/919999999999?text=Hello%20Rangratna%20Sarees%2C%20mala%20Traditional%20Printed%20Saree%20RS002%20order%20karaychi%20aahe.">
+📱 Order on WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 3 -->
+
+<div class="product">
+
+<div class="product-image">
+📸
+</div>
+
+<div class="product-info">
+
+<h3>Party Wear Saree</h3>
+
+<div class="rating">
+★★★★★ 4.6
+</div>
+
+<div class="price">
+₹650
+<span class="old-price">₹899</span>
+</div>
+
+<p>Product ID: RS003</p>
+
+<a class="buy"
+href="https://wa.me/919999999999?text=Hello%20Rangratna%20Sarees%2C%20mala%20Party%20Wear%20Saree%20RS003%20order%20karaychi%20aahe.">
+📱 Order on WhatsApp
+</a>
+
+</div>
+
+</div>
+
+
+<!-- PRODUCT 4 -->
+
+<div class="product">
+
+<div class="product-image">
+📸
+</div>
+
+<div class="product-info">
+
+<h3>Cotton Saree</h3>
+
+<div class="rating">
+★★★★★ 4.5
+</div>
+
+<div class="price">
+₹599
+<span class="old-price">₹799</span>
+</div>
+
+<p>Product ID: RS004</p>
+
+<a class="buy"
+href="https://wa.me/919999999999?text=Hello%20Rangratna%20Sarees%2C%20mala%20Cotton%20Saree%20RS004%20order%20karaychi%20aahe.">
+📱 Order on WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REVIEWS -->
+
+<section class="section" id="reviews">
+
+<h2 class="section-title">
+⭐ Customer Reviews
+</h2>
+
+<div class="reviews">
+
+<div class="review">
+★★★★★
+<br><br>
+<strong>Priya</strong>
+<p>साडी खूप सुंदर आहे. Quality छान आहे.</p>
+</div>
+
+<div class="review">
+★★★★★
+<br><br>
+<strong>Sunita</strong>
+<p>Delivery वेळेत मिळाली. साडी आवडली.</p>
+</div>
+
+<div class="review">
+★★★★★
+<br><br>
+<strong>Neha</strong>
+<p>Price आणि quality दोन्ही चांगले आहेत.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+
+<h2 class="section-title">
+📞 Contact Us
+</h2>
+
+<div style="text-align:center">
+
+<p>🌈 RANGRATNA SAREES</p>
+
+<p>📱 WhatsApp Order Available</p>
+
+<p>🚚 Courier Delivery Available</p>
+
+<p>💵 Cash on Delivery Available</p>
+
+<br>
+
+<a class="buy"
+style="display:inline-block"
+href="https://wa.me/919999999999?text=Hello%20Rangratna%20Sarees">
+💬 WhatsApp Us
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>🌈 RANGRATNA SAREES</h3>
+
+<p>रंग, परंपरा आणि सौंदर्य</p>
+
+<br>
+
+<p>© 2026 RANGRATNA SAREES</p>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a class="whatsapp"
+href="https://wa.me/919999999999?text=Hello%20Rangratna%20Sarees">
+💬
+</a>
+
+</body>
+</html>
